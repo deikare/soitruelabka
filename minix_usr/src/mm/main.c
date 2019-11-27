@@ -187,3 +187,15 @@ int do_addtoprocnr() {
 	return mproc[who].mp_pid + data;
 }
 
+int do_getprocgroup() {
+  message m;
+  m = mm_in;
+  return(_taskcall(SYSTASK, SYS_GETGROUP, &m));
+}
+
+int do_setscheduler() {
+  message m;
+  m = mm_in;
+  m.m1_i1 = mproc[who].mp_pid;
+  return(_taskcall(SYSTASK, SYS_SETSCHEDULER, &m));
+}

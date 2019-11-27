@@ -1,4 +1,4 @@
-#define NCALLS		  80	/* number of system calls allowed */
+#define NCALLS		  82	/* number of system calls allowed */
 
 #define EXIT		   1 
 #define FORK		   2 
@@ -67,3 +67,5 @@
 #define SVRCTL		  77
 #define GETPROCNR         78
 #define ADDTOPROCNR       79
+#define GETPROCGROUP      80
+#define SETSCHEDULER      81

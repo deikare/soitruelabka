@@ -39,6 +39,8 @@ _PROTOTYPE( int do_getset, (void)					);
 _PROTOTYPE( void main, (void)						);
 _PROTOTYPE( int do_getprocnr, (void)                                    );
 _PROTOTYPE( int do_addtoprocnr, (void)                                  );
+_PROTOTYPE( int do_getprocgroup, (void) 								);
+_PROTOTYPE( int do_setscheduler, (void) 								);
 /* misc.c */
 _PROTOTYPE( int do_reboot, (void)					);
 _PROTOTYPE( int do_svrctl, (void)					);
